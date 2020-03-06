@@ -6,7 +6,7 @@ function Home() {
   const [rooms, setRooms] = useState([])
   useEffect(() => {
     axios
-      .get('http://localhost:8000/api/adv/rooms/')
+      .get('https://mudgame-pam.herokuapp.com/api/adv/rooms/')
       .then(res => setRooms([...res.data.message]))
       .catch(err => console.log(err))
   }, [])
