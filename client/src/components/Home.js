@@ -70,6 +70,7 @@ function Home() {
   }
 
   const movePlayer = e => {
+    clearRect()
     switch (e.keyCode) {
       case 37:
         // left keypad
